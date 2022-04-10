@@ -1,6 +1,6 @@
-import { AppBar, Toolbar } from '@mui/material'
+import { AppBar, Toolbar, Grid } from '@mui/material'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
-import { ContactCard } from 'components'
+import { ContactCard, History } from 'components'
 
 const Splash = () => {
   const darkTheme = createTheme({
@@ -19,6 +19,9 @@ const Splash = () => {
           <ContactCard />          
         </Toolbar>
       </AppBar>
+      <Grid sm={3} container sx={{ mt: '100px' }}>
+        <History />
+      </Grid>
     </ThemeProvider>
   )
 }

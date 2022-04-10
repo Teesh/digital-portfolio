@@ -12,7 +12,7 @@ const ContactCard = () => {
         />
       </Grid>
       <Grid item sx={{ pl: 2 }}>
-        <Grid direction="column">
+        <Grid container direction="column">
           <Typography sx={{ fontSize: 30 }}>
             Priteesh Shahi
           </Typography>
